@@ -3,6 +3,9 @@ from supabase import create_client, Client
 import google.generativeai as genai
 from google.api_core import exceptions
 
+SUPABASE_URL =st.secrets['SUPBASE_URL']
+SUPABASE_KEY =st.secrets['SUPBASE_KEY']
+GEMINI_API_KEY =st.secrets['GEMINI_API_KEY']
 
 # Initialize Supabase
 supabase: Client = create_client("SUPABASE_URL", "SUPABASE_KEY")
