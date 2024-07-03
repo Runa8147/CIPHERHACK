@@ -1,0 +1,4 @@
+python 
+streamlit
+google-generativeai
+supabase
