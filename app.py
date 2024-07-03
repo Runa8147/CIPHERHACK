@@ -8,7 +8,7 @@ SUPABASE_KEY =st.secrets['SUPABASE_KEY']
 GEMINI_API_KEY =st.secrets['GEMINI_API_KEY']
 
 # Initialize Supabase
-supabase: Client = create_client("SUPABASE_URL", "SUPABASE_KEY")
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # Initialize Gemini
 genai.configure(api_key="GEMINI_API_KEY")
