@@ -11,7 +11,7 @@ GEMINI_API_KEY =st.secrets["GEMINI_API_KEY"]
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # Initialize Gemini
-genai.configure(api_key="GEMINI_API_KEY")
+genai.configure(api_key=GEMINI_API_KEY)
 
 
 # Function to generate ideas using Gemini
